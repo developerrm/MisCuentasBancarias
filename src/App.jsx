@@ -16,9 +16,15 @@ function App() {
         <div className="contenedorApp-glass">
           <BrowserRouter>
             <Routes>
-              <Route path="/" />
-              <Route path="/listadoPersonas" element={<ListadoPersonas />} />
-              <Route path="/MisCuentas" element={<MisCuentas />} />
+              <Route path="/MisCuentasBancarias" />
+              <Route
+                path="/MisCuentasBancarias/listadoPersonas"
+                element={<ListadoPersonas />}
+              />
+              <Route
+                path="/MisCuentasBancarias/MisCuentas"
+                element={<MisCuentas />}
+              />
             </Routes>
           </BrowserRouter>
         </div>
