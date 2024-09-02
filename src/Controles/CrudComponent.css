@@ -1,0 +1,19 @@
+.container-crud{
+    width: 100%;
+    justify-content: right;
+}
+.container-crud ul{ 
+    text-align: end;
+} 
+.container-crud a li{
+    text-decoration: none;
+    list-style: none;
+    padding: .5rem;
+    margin-left: .2rem;
+    text-align: right;
+    display: inline;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 1px 0px rgba(0,0,0,.2);
+}

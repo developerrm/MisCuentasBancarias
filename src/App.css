@@ -1,0 +1,130 @@
+#root{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 56.5%;
+  font-family: Lato,sans-serif;
+  width: 100%;
+  flex-wrap: wrap;
+  --fontBody: Open-Sans;
+}
+*, *::after,*::before{
+box-sizing: inherit;
+}
+body{
+  
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  /* font-family: var(--fontBody); */
+}
+/* utils */
+.no-margin{
+  margin: 0;
+}
+.no-padding{
+  padding: 0;
+}
+.contenedorApp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: calc(100vh - 80px);
+  background-image: url("./assets/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedorApp-glass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, transparent 0%, black 500%);
+  height: calc(100vh - 80px);
+width: 100%;
+}
+.NavBar{
+width: 100%;
+height: 80px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.445) 0%, rgba(0, 0, 0, 0.973) 100%) ;
+color: white;
+font-weight: bold;
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: space-between; */
+margin: 0;
+padding: 1rem;
+justify-content: center;
+user-select: none;
+}
+.NavBar ul{
+  float: right;
+text-align: center;
+
+
+}
+.NavBar li{
+  display: inline-block;
+  list-style: none;
+  font-size: 1rem;
+}
+.NavBar a{
+  text-decoration: none;
+  color: white;
+  padding: .8rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.NavBar a:hover{
+background-color: white;
+color: black;
+}
+.label-logo{
+font-size: 2rem;
+margin: 1rem;
+cursor: pointer;
+}
+.navbar-check{
+}
+.navbar-check-button{
+font-size: 2.5rem;
+cursor: pointer;
+float: right;
+display: none;
+}
+#navbar-check{
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar-check-button{
+    display: block;
+    }
+    .NavBar ul{
+      position: fixed;
+      margin-top: 80px;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(71, 70, 70);
+      top: 0rem;
+      left: -100%;
+      text-align: center;
+      font-size: 1rem;
+      transition: all .5s;
+    }
+    .NavBar ul li {
+      display: block;
+      background: none;
+    }
+    .NavBar a:hover, a:active{
+      
+      background: none;
+      color: rgb(0, 0, 14);
+    }
+    #navbar-check:checked ~ ul {
+      left:0%;
+      z-index: 2;
+    }
+}

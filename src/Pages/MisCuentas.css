@@ -1,0 +1,63 @@
+.contenedor__MisCuentas{
+    display: flex;
+    justify-content : center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    --colorPichincha: #FFBF14;
+    --colorPacifico: #0D4AEB;
+    --colorProdubanco: #33B656;
+    --colorblanco: white;
+    --colorGris: gray;
+    --colorNegro: black;
+    --backgroundCard : #222;
+    margin: 0rem 2rem;    
+}
+.header{
+color: white;
+font-size: 2.5rem;
+}
+/* utils */
+.important{
+    font-weight: bold;
+}
+.card__MisCuentas{
+    border-radius: 1.3rem;
+    padding: 0.3rem;
+    user-select: none;
+}
+.card__banco{
+    border-radius: 1.3rem;
+    width: 20rem;
+    height: 12rem;
+    cursor: pointer;
+    padding: 1rem;
+    text-align: left;
+    /* background-color: var(--backgroundCard) ; */
+    /* box-shadow: 4px 1px 2px 1px rgba(0,0,0, 0.3); */
+}
+.card__banco-labels{
+    font-size: 1.2rem;
+    color: var(--colorblanco);
+    line-height: .2rem;
+    
+}
+.card__banco-header{
+    font-size: 1.7rem;
+    color: var(--colorNegro);
+}
+.money{
+    font-size: 1.7rem;
+    color: var(--colorNegro);
+}
+.pichincha{    
+    background: linear-gradient(to right,   var(--colorPichincha) 0%,  rgb(255, 238, 0)100%);
+    /* background:  var(--colorPichincha) ; */
+}
+.pacifico{
+    background: linear-gradient(to right, var(--colorPacifico) 0%, darkblue  100%);
+    /* background:  var(--colorPacifico); */
+}
+.produbanco{
+    background: linear-gradient(to right, var(--colorProdubanco) 0%, green 100%);
+    /* background: var(--colorProdubanco) ; */
+}
